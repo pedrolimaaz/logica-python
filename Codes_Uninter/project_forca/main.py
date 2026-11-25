@@ -26,6 +26,14 @@ while True:
         j.jogar()
     elif opcao == 2:
         print('SCORE')
+        dados = fH.listarArquivo('score.txt')
+        if not dados:
+            print('Score vazio.')
+        else:
+            i = 1
+            for jogador in dados:
+                print(f'{i} -> {jogador[0]}, Pontuação: {jogador[1][:-1]}')
+                i += 1
     elif opcao == 3:
         print('Saindo do jogo. Até mais !')
         break

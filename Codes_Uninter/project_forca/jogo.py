@@ -57,4 +57,4 @@ def jogar():
             print(f'A palavra correta era {palavra_sorteada}.')
             break
 
-        fH.inserir_score('score.txt', nome, score)
+    fH.inserir_score('score.txt', nome, score)
